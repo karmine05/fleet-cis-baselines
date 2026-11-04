@@ -1,0 +1,13 @@
+<!-- Fleet policy: CIS 4.7.2 (L1) Ensure 'Configure Redirection Guard: Redirection Guard Options' is set to 'Enabled: Redirection Guard Enabled' -->
+<Replace>
+  <CmdID>1</CmdID>
+  <Item>
+    <Meta>
+      <Format xmlns="syncml:metinf">chr</Format>
+    </Meta>
+    <Target>
+      <LocURI>./Device/Vendor/MSFT/Policy/Config/Printers/ConfigureRedirectionGuardPolicy</LocURI>
+    </Target>
+    <Data><![CDATA[<enabled/><data id="RedirectionGuardPolicy_Enum" value="1"/>]]></Data>
+  </Item>
+</Replace>

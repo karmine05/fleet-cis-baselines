@@ -1,0 +1,13 @@
+<!-- Fleet policy: CIS 38.23 (L1) Ensure 'Enable Public Network Firewall: Log Max File Size' is set to '16,384 KB or greater' -->
+<Replace>
+  <CmdID>1</CmdID>
+  <Item>
+    <Meta>
+      <Format xmlns="syncml:metinf">int</Format>
+    </Meta>
+    <Target>
+      <LocURI>./Device/Vendor/MSFT/Firewall/MdmStore/PublicProfile/LogMaxFileSize</LocURI>
+    </Target>
+    <Data>16384</Data>
+  </Item>
+</Replace>

@@ -1,0 +1,13 @@
+<!-- Fleet policy: CIS 103.5 (L1) Ensure 'Scheduled Install Day' is set to 'Every day' -->
+<Replace>
+  <CmdID>1</CmdID>
+  <Item>
+    <Meta>
+      <Format xmlns="syncml:metinf">int</Format>
+    </Meta>
+    <Target>
+      <LocURI>./Device/Vendor/MSFT/Policy/Config/Update/ScheduledInstallDay</LocURI>
+    </Target>
+    <Data>0</Data>
+  </Item>
+</Replace>

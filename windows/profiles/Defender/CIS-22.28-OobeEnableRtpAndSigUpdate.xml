@@ -1,0 +1,13 @@
+<!-- Fleet policy: CIS 22.28 (L1) Ensure 'Oobe Enable Rtp And Sig Update' is set to 'Enabled' -->
+<Replace>
+  <CmdID>1</CmdID>
+  <Item>
+    <Meta>
+      <Format xmlns="syncml:metinf">int</Format>
+    </Meta>
+    <Target>
+      <LocURI>./Device/Vendor/MSFT/Defender/Configuration/OobeEnableRtpAndSigUpdate</LocURI>
+    </Target>
+    <Data>1</Data>
+  </Item>
+</Replace>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>PayloadContent</key>
+	<array>
+		<dict>
+			<key>AutoSubmit</key>
+			<false/>
+			<key>PayloadDisplayName</key>
+			<string>com.apple.SubmitDiagInfo</string>
+			<key>PayloadIdentifier</key>
+			<string>com.fleet.cis.cis-privacy-analytics.0</string>
+			<key>PayloadType</key>
+			<string>com.apple.SubmitDiagInfo</string>
+			<key>PayloadUUID</key>
+			<string>CABF04A0-DA1F-5B9F-A65C-C89691163867</string>
+			<key>PayloadVersion</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>AXSAudioDonationSiriImprovementEnabled</key>
+			<false/>
+			<key>PayloadDisplayName</key>
+			<string>com.apple.Accessibility</string>
+			<key>PayloadIdentifier</key>
+			<string>com.fleet.cis.cis-privacy-analytics.1</string>
+			<key>PayloadType</key>
+			<string>com.apple.Accessibility</string>
+			<key>PayloadUUID</key>
+			<string>19D2F87B-8412-52D3-9706-3BE5FAFCFE13</string>
+			<key>PayloadVersion</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>PayloadDisplayName</key>
+			<string>com.apple.assistant.support</string>
+			<key>PayloadIdentifier</key>
+			<string>com.fleet.cis.cis-privacy-analytics.2</string>
+			<key>PayloadType</key>
+			<string>com.apple.assistant.support</string>
+			<key>PayloadUUID</key>
+			<string>91ED1DBA-BD7D-5FE2-8000-D36DA4141140</string>
+			<key>PayloadVersion</key>
+			<integer>1</integer>
+			<key>Siri Data Sharing Opt-In Status</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>PayloadDisplayName</key>
+			<string>com.apple.Spotlight</string>
+			<key>PayloadIdentifier</key>
+			<string>com.fleet.cis.cis-privacy-analytics.3</string>
+			<key>PayloadType</key>
+			<string>com.apple.Spotlight</string>
+			<key>PayloadUUID</key>
+			<string>121A2205-CB04-5783-A840-A64471178E4E</string>
+			<key>PayloadVersion</key>
+			<integer>1</integer>
+			<key>SuppressSpotlightInternetResults</key>
+			<true/>
+		</dict>
+	</array>
+	<key>PayloadDescription</key>
+	<string>Analytics and Siri/Spotlight data sharing (2.6.3.x, 2.9.1)</string>
+	<key>PayloadDisplayName</key>
+	<string>CIS - Analytics and Siri/Spotlight data sharing (2.6.3.x, 2.9.1)</string>
+	<key>PayloadIdentifier</key>
+	<string>com.fleet.cis.cis-privacy-analytics</string>
+	<key>PayloadScope</key>
+	<string>System</string>
+	<key>PayloadType</key>
+	<string>Configuration</string>
+	<key>PayloadUUID</key>
+	<string>FA8E11C8-1FA6-55A3-AE43-E7D42358E465</string>
+	<key>PayloadVersion</key>
+	<integer>1</integer>
+</dict>
+</plist>

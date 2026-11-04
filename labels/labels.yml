@@ -1,0 +1,173 @@
+# Fleet labels used to scope the policies and profiles in this repo.
+# Apply with: fleetctl apply -f labels/labels.yml
+# For fleetctl gitops, put each spec block in your top-level `labels:` list instead.
+apiVersion: v1
+kind: label
+spec:
+  name: CIS scope - Windows workstations
+  description: Any Windows client OS (not Server). Default scope for registry and service checks.
+  query: SELECT 1 FROM os_version WHERE platform = 'windows' AND name NOT LIKE '%Server%';
+  platform: windows
+  label_membership_type: dynamic
+---
+apiVersion: v1
+kind: label
+spec:
+  name: CIS scope - Windows 11 workstations
+  description: Windows client OS, build 22000 or later. Scope for the CIS Windows 11 benchmark.
+  query: SELECT 1 FROM os_version WHERE platform = 'windows' AND name NOT LIKE '%Server%' AND CAST(build AS INTEGER) >= 22000;
+  platform: windows
+  label_membership_type: dynamic
+---
+apiVersion: v1
+kind: label
+spec:
+  name: CIS scope - Windows 10 workstations
+  description: Windows client OS, build below 22000. Win11-only CSPs fail here.
+  query: SELECT 1 FROM os_version WHERE platform = 'windows' AND name NOT LIKE '%Server%' AND CAST(build AS INTEGER) < 22000;
+  platform: windows
+  label_membership_type: dynamic
+---
+apiVersion: v1
+kind: label
+spec:
+  name: CIS scope - Windows Server (all)
+  description: Any Windows Server SKU. Cannot enroll in Fleet MDM; mdm_bridge policies return no data.
+  query: SELECT 1 FROM os_version WHERE platform = 'windows' AND name LIKE '%Server%';
+  platform: windows
+  label_membership_type: dynamic
+---
+apiVersion: v1
+kind: label
+spec:
+  name: CIS scope - Windows member servers
+  description: Windows Server that is not a domain controller.
+  query: SELECT 1 FROM os_version WHERE platform = 'windows' AND name LIKE '%Server%' AND NOT EXISTS (SELECT 1 FROM services WHERE name = 'NTDS');
+  platform: windows
+  label_membership_type: dynamic
+---
+apiVersion: v1
+kind: label
+spec:
+  name: CIS scope - Windows MDM enrolled (Fleet)
+  description: Windows host with an active Fleet MDM enrollment. Required for configuration profiles and mdm_bridge policies.
+  query: SELECT 1 FROM registry WHERE key LIKE 'HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Enrollments\%' AND name = 'ProviderID' AND data = 'Fleet';
+  platform: windows
+  label_membership_type: dynamic
+---
+apiVersion: v1
+kind: label
+spec:
+  name: CIS scope - Windows domain-joined
+  description: Joined to an AD domain. Domain GPOs can override MDM for the same setting (audit policy, user rights).
+  query: SELECT 1 FROM registry WHERE path = 'HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Tcpip\Parameters\Domain' AND data <> '';
+  platform: windows
+  label_membership_type: dynamic
+---
+apiVersion: v1
+kind: label
+spec:
+  name: CIS scope - Windows Enterprise or Education
+  description: Editions that honor Enterprise-only policies (Spotlight, some Experience and WDAC settings).
+  query: SELECT 1 FROM os_version WHERE platform = 'windows' AND (name LIKE '%Enterprise%' OR name LIKE '%Education%');
+  platform: windows
+  label_membership_type: dynamic
+---
+apiVersion: v1
+kind: label
+spec:
+  name: CIS scope - Windows TPM ready
+  description: TPM enabled and activated. Scope for BitLocker (BL) policies.
+  query: SELECT 1 FROM tpm_info WHERE enabled = 1 AND activated = 1;
+  platform: windows
+  label_membership_type: dynamic
+---
+apiVersion: v1
+kind: label
+spec:
+  name: CIS scope - macOS MDM enrolled
+  description: Mac enrolled in MDM. Required for configuration profiles and every managed_policies check.
+  query: SELECT 1 FROM mdm WHERE enrolled = 'true';
+  platform: darwin
+  label_membership_type: dynamic
+---
+apiVersion: v1
+kind: label
+spec:
+  name: CIS scope - macOS laptops
+  description: MacBook models. Scope for sleep and battery items, so always-on Macs are not put to sleep.
+  query: SELECT 1 FROM system_info WHERE hardware_model LIKE 'MacBook%';
+  platform: darwin
+  label_membership_type: dynamic
+---
+apiVersion: v1
+kind: label
+spec:
+  name: CIS scope - macOS Intel laptops
+  description: Intel MacBook models. Scope for Intel standby and DestroyFVKeyOnStandby items.
+  query: SELECT 1 FROM system_info WHERE hardware_model LIKE 'MacBook%' AND cpu_type LIKE 'x86_64%';
+  platform: darwin
+  label_membership_type: dynamic
+---
+apiVersion: v1
+kind: label
+spec:
+  name: CIS scope - Ubuntu 24.04
+  description: Ubuntu 24.04 hosts.
+  query: SELECT 1 FROM os_version WHERE platform = 'ubuntu' AND major = 24 AND minor = 4;
+  platform: linux
+  label_membership_type: dynamic
+---
+apiVersion: v1
+kind: label
+spec:
+  name: CIS scope - Ubuntu 26.04
+  description: Ubuntu 26.04 hosts. pam_lastlog and /etc/timezone are gone, and the default hash is YESCRYPT.
+  query: SELECT 1 FROM os_version WHERE platform = 'ubuntu' AND major = 26;
+  platform: linux
+  label_membership_type: dynamic
+---
+apiVersion: v1
+kind: label
+spec:
+  name: CIS scope - Linux desktops
+  description: Ubuntu with a GNOME desktop. Scope for the gdm3/dconf items.
+  query: SELECT 1 FROM deb_packages WHERE name IN ('gdm3', 'ubuntu-desktop', 'ubuntu-desktop-minimal') LIMIT 1;
+  platform: linux
+  label_membership_type: dynamic
+---
+apiVersion: v1
+kind: label
+spec:
+  name: CIS scope - Linux auditd installed
+  description: auditd is installed. Audit-rule checks only make sense after it is.
+  query: SELECT 1 FROM deb_packages WHERE name = 'auditd';
+  platform: linux
+  label_membership_type: dynamic
+---
+apiVersion: v1
+kind: label
+spec:
+  name: CIS scope - Linux aide installed
+  description: AIDE is installed.
+  query: SELECT 1 FROM deb_packages WHERE name = 'aide';
+  platform: linux
+  label_membership_type: dynamic
+---
+apiVersion: v1
+kind: label
+spec:
+  name: CIS scope - Linux directory joined
+  description: SSSD is installed and configured. Scope for the SSSD items.
+  query: SELECT 1 FROM deb_packages WHERE name = 'sssd' AND EXISTS (SELECT 1 FROM file WHERE path = '/etc/sssd/sssd.conf');
+  platform: linux
+  label_membership_type: dynamic
+---
+apiVersion: v1
+kind: label
+spec:
+  name: CIS scope - Linux smart card required
+  description: PIV/smart-card middleware is installed. Scope for the pam_pkcs11 items.
+  query: SELECT 1 FROM deb_packages WHERE name IN ('libpam-pkcs11', 'opensc-pkcs11') LIMIT 1;
+  platform: linux
+  label_membership_type: dynamic

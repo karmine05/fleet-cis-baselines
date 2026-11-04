@@ -1,0 +1,13 @@
+<!-- Fleet policy: CIS 4.11.15.4.1 (L1) Ensure 'Control Event Log behavior when the log file reaches its maximum size' is set to 'Disabled' -->
+<Replace>
+  <CmdID>1</CmdID>
+  <Item>
+    <Meta>
+      <Format xmlns="syncml:metinf">chr</Format>
+    </Meta>
+    <Target>
+      <LocURI>./Device/Vendor/MSFT/Policy/Config/ADMX_EventLog/Channel_Log_Retention_4</LocURI>
+    </Target>
+    <Data><![CDATA[<disabled/>]]></Data>
+  </Item>
+</Replace>

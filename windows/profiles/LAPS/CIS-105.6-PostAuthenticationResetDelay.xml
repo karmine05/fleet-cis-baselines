@@ -1,0 +1,13 @@
+<!-- Fleet policy: CIS 105.6 (L1) Ensure 'Post Authentication Reset Delay' is set to 'Configured: 8 or fewer hours, but not 0' -->
+<Replace>
+  <CmdID>1</CmdID>
+  <Item>
+    <Meta>
+      <Format xmlns="syncml:metinf">int</Format>
+    </Meta>
+    <Target>
+      <LocURI>./Device/Vendor/MSFT/LAPS/Policies/PostAuthenticationResetDelay</LocURI>
+    </Target>
+    <Data>8</Data>
+  </Item>
+</Replace>

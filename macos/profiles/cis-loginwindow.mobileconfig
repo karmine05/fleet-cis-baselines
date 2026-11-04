@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>PayloadContent</key>
+	<array>
+		<dict>
+			<key>PayloadDisplayName</key>
+			<string>com.apple.loginwindow</string>
+			<key>PayloadIdentifier</key>
+			<string>com.fleet.cis.cis-loginwindow.0</string>
+			<key>PayloadType</key>
+			<string>com.apple.loginwindow</string>
+			<key>PayloadUUID</key>
+			<string>0750BA7B-C259-5A92-B5F0-85B2CC25469E</string>
+			<key>PayloadVersion</key>
+			<integer>1</integer>
+			<key>RetriesUntilHint</key>
+			<integer>0</integer>
+			<key>SHOWFULLNAME</key>
+			<true/>
+			<key>com.apple.login.mcx.DisableAutoLoginClient</key>
+			<true/>
+		</dict>
+	</array>
+	<key>PayloadDescription</key>
+	<string>Login window (2.11.4, 2.11.5, 2.13.3)</string>
+	<key>PayloadDisplayName</key>
+	<string>CIS - Login window (2.11.4, 2.11.5, 2.13.3)</string>
+	<key>PayloadIdentifier</key>
+	<string>com.fleet.cis.cis-loginwindow</string>
+	<key>PayloadScope</key>
+	<string>System</string>
+	<key>PayloadType</key>
+	<string>Configuration</string>
+	<key>PayloadUUID</key>
+	<string>1199E2B7-9DA1-5741-8354-9D785368C33A</string>
+	<key>PayloadVersion</key>
+	<integer>1</integer>
+</dict>
+</plist>

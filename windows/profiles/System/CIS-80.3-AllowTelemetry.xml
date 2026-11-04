@@ -1,0 +1,13 @@
+<!-- Fleet policy: CIS 80.3 (L1) Ensure 'Allow Telemetry' is set to 'Basic' -->
+<Replace>
+  <CmdID>1</CmdID>
+  <Item>
+    <Meta>
+      <Format xmlns="syncml:metinf">int</Format>
+    </Meta>
+    <Target>
+      <LocURI>./Device/Vendor/MSFT/Policy/Config/System/AllowTelemetry</LocURI>
+    </Target>
+    <Data>1</Data>
+  </Item>
+</Replace>

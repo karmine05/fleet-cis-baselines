@@ -1,0 +1,13 @@
+<!-- Fleet policy: CIS 4.11.36.4.10.1 (L2) Ensure 'Set time limit for active but idle Remote Desktop Services sessions' is set to 'Enabled: 15 minutes or less, but not Never (0)' -->
+<Replace>
+  <CmdID>1</CmdID>
+  <Item>
+    <Meta>
+      <Format xmlns="syncml:metinf">chr</Format>
+    </Meta>
+    <Target>
+      <LocURI>./Device/Vendor/MSFT/Policy/Config/ADMX_TerminalServer/TS_SESSIONS_Idle_Limit_2</LocURI>
+    </Target>
+    <Data><![CDATA[<enabled/><data id="TS_SESSIONS_IdleLimitText" value="900000"/>]]></Data>
+  </Item>
+</Replace>

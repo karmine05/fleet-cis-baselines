@@ -1,0 +1,13 @@
+<!-- Fleet policy: CIS 6.2 (L1) Ensure 'Account Logon Logoff Audit Account Lockout' is set to include 'Failure' -->
+<Replace>
+  <CmdID>1</CmdID>
+  <Item>
+    <Meta>
+      <Format xmlns="syncml:metinf">int</Format>
+    </Meta>
+    <Target>
+      <LocURI>./Device/Vendor/MSFT/Policy/Config/Audit/AccountLogonLogoff_AuditAccountLockout</LocURI>
+    </Target>
+    <Data>2</Data>
+  </Item>
+</Replace>

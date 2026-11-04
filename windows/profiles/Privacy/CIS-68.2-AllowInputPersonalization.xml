@@ -1,0 +1,13 @@
+<!-- Fleet policy: CIS 68.2 (L1) Ensure 'Allow Input Personalization' is set to 'Block' -->
+<Replace>
+  <CmdID>1</CmdID>
+  <Item>
+    <Meta>
+      <Format xmlns="syncml:metinf">int</Format>
+    </Meta>
+    <Target>
+      <LocURI>./Device/Vendor/MSFT/Policy/Config/Privacy/AllowInputPersonalization</LocURI>
+    </Target>
+    <Data>0</Data>
+  </Item>
+</Replace>

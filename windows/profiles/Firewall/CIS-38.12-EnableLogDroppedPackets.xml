@@ -1,0 +1,13 @@
+<!-- Fleet policy: CIS 38.12 (L1) Ensure 'Enable Private Network Firewall: Enable Log Dropped Packets' is set to 'Yes: Enable Logging Of Dropped Packets' -->
+<Replace>
+  <CmdID>1</CmdID>
+  <Item>
+    <Meta>
+      <Format xmlns="syncml:metinf">bool</Format>
+    </Meta>
+    <Target>
+      <LocURI>./Device/Vendor/MSFT/Firewall/MdmStore/PrivateProfile/EnableLogDroppedPackets</LocURI>
+    </Target>
+    <Data>true</Data>
+  </Item>
+</Replace>

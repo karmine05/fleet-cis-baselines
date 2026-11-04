@@ -1,0 +1,13 @@
+<!-- Fleet policy: CIS 49.26 (L1) Ensure 'Network Security Minimum Session Security For NTLMSSP Based Servers' is set to 'Require NTLM and 128-bit encryption' -->
+<Replace>
+  <CmdID>1</CmdID>
+  <Item>
+    <Meta>
+      <Format xmlns="syncml:metinf">int</Format>
+    </Meta>
+    <Target>
+      <LocURI>./Device/Vendor/MSFT/Policy/Config/LocalPoliciesSecurityOptions/NetworkSecurity_MinimumSessionSecurityForNTLMSSPBasedServers</LocURI>
+    </Target>
+    <Data>537395200</Data>
+  </Item>
+</Replace>

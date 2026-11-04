@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>PayloadContent</key>
+	<array>
+		<dict>
+			<key>Bluetooth</key>
+			<integer>18</integer>
+			<key>PayloadDisplayName</key>
+			<string>com.apple.controlcenter</string>
+			<key>PayloadIdentifier</key>
+			<string>com.fleet.cis.cis-controlcenter.0</string>
+			<key>PayloadType</key>
+			<string>com.apple.controlcenter</string>
+			<key>PayloadUUID</key>
+			<string>50D50B12-6948-5D6B-83B7-5AF7E45FCF37</string>
+			<key>PayloadVersion</key>
+			<integer>1</integer>
+			<key>WiFi</key>
+			<integer>18</integer>
+		</dict>
+	</array>
+	<key>PayloadDescription</key>
+	<string>Show Wi-Fi and Bluetooth in menu bar (2.4.1)</string>
+	<key>PayloadDisplayName</key>
+	<string>CIS - Show Wi-Fi and Bluetooth in menu bar (2.4.1)</string>
+	<key>PayloadIdentifier</key>
+	<string>com.fleet.cis.cis-controlcenter</string>
+	<key>PayloadScope</key>
+	<string>System</string>
+	<key>PayloadType</key>
+	<string>Configuration</string>
+	<key>PayloadUUID</key>
+	<string>801FABA0-4026-51E2-87C5-616A27E72EE1</string>
+	<key>PayloadVersion</key>
+	<integer>1</integer>
+</dict>
+</plist>

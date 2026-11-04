@@ -1,0 +1,13 @@
+<!-- Fleet policy: CIS 4.6.9.1 (L1) Ensure 'Prohibit installation and configuration of Network Bridge on your DNS domain network' is set to 'Enabled' -->
+<Replace>
+  <CmdID>1</CmdID>
+  <Item>
+    <Meta>
+      <Format xmlns="syncml:metinf">chr</Format>
+    </Meta>
+    <Target>
+      <LocURI>./Device/Vendor/MSFT/Policy/Config/Connectivity/ProhibitInstallationAndConfigurationOfNetworkBridge</LocURI>
+    </Target>
+    <Data><![CDATA[<enabled/>]]></Data>
+  </Item>
+</Replace>

@@ -1,0 +1,13 @@
+<!-- Fleet policy: CIS 24.4 (L1) Ensure 'Require Platform Security Features' is set to 'Turns on VBS with Secure Boot' or higher -->
+<Replace>
+  <CmdID>1</CmdID>
+  <Item>
+    <Meta>
+      <Format xmlns="syncml:metinf">int</Format>
+    </Meta>
+    <Target>
+      <LocURI>./Device/Vendor/MSFT/Policy/Config/DeviceGuard/RequirePlatformSecurityFeatures</LocURI>
+    </Target>
+    <Data>1</Data>
+  </Item>
+</Replace>

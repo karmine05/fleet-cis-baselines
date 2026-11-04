@@ -1,0 +1,13 @@
+<!-- Fleet policy: CIS 4.10.20.1.6 (L2) Ensure 'Turn off printing over HTTP' is set to 'Enabled' -->
+<Replace>
+  <CmdID>1</CmdID>
+  <Item>
+    <Meta>
+      <Format xmlns="syncml:metinf">chr</Format>
+    </Meta>
+    <Target>
+      <LocURI>./Device/Vendor/MSFT/Policy/Config/Connectivity/DiablePrintingOverHTTP</LocURI>
+    </Target>
+    <Data><![CDATA[<enabled/>]]></Data>
+  </Item>
+</Replace>

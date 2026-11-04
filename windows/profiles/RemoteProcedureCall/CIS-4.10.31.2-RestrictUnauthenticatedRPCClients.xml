@@ -1,0 +1,13 @@
+<!-- Fleet policy: CIS 4.10.31.2 (L1) Ensure 'Restrict Unauthenticated RPC clients' is set to 'Enabled: Authenticated' -->
+<Replace>
+  <CmdID>1</CmdID>
+  <Item>
+    <Meta>
+      <Format xmlns="syncml:metinf">chr</Format>
+    </Meta>
+    <Target>
+      <LocURI>./Device/Vendor/MSFT/Policy/Config/RemoteProcedureCall/RestrictUnauthenticatedRPCClients</LocURI>
+    </Target>
+    <Data><![CDATA[<enabled/><data id="RpcRestrictRemoteClientsList" value="1"/>]]></Data>
+  </Item>
+</Replace>

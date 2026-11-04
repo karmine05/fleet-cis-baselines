@@ -1,0 +1,13 @@
+<!-- Fleet policy: CIS 4.11.36.4.10.2 (L2) Ensure 'Set time limit for disconnected sessions' is set to 'Enabled: 1 minute' -->
+<Replace>
+  <CmdID>1</CmdID>
+  <Item>
+    <Meta>
+      <Format xmlns="syncml:metinf">chr</Format>
+    </Meta>
+    <Target>
+      <LocURI>./Device/Vendor/MSFT/Policy/Config/ADMX_TerminalServer/TS_SESSIONS_Disconnected_Timeout_2</LocURI>
+    </Target>
+    <Data><![CDATA[<enabled/><data id="TS_SESSIONS_EndDisconnected" value="60000"/>]]></Data>
+  </Item>
+</Replace>

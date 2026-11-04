@@ -1,0 +1,13 @@
+<!-- Fleet policy: CIS 4.10.26.3 (L1) Ensure 'Do not enumerate connected users on domain-joined computers' is set to 'Enabled' -->
+<Replace>
+  <CmdID>1</CmdID>
+  <Item>
+    <Meta>
+      <Format xmlns="syncml:metinf">chr</Format>
+    </Meta>
+    <Target>
+      <LocURI>./Device/Vendor/MSFT/Policy/Config/ADMX_Logon/DontEnumerateConnectedUsers</LocURI>
+    </Target>
+    <Data><![CDATA[<enabled/>]]></Data>
+  </Item>
+</Replace>

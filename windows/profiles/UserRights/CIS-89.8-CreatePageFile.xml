@@ -1,0 +1,13 @@
+<!-- Fleet policy: CIS 89.8 (L1) Ensure 'Create Page File' is set to 'Administrators' -->
+<Replace>
+  <CmdID>1</CmdID>
+  <Item>
+    <Meta>
+      <Format xmlns="syncml:metinf">chr</Format>
+    </Meta>
+    <Target>
+      <LocURI>./Device/Vendor/MSFT/Policy/Config/UserRights/CreatePageFile</LocURI>
+    </Target>
+    <Data>Administrators</Data>
+  </Item>
+</Replace>

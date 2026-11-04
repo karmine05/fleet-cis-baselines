@@ -1,0 +1,13 @@
+<!-- Fleet policy: CIS 104.1 (L1) Ensure 'Require PIN For Pairing' is set to 'Enabled: Pairing ceremony for new devices will always require a PIN' OR 'All pairings will require PIN' -->
+<Replace>
+  <CmdID>1</CmdID>
+  <Item>
+    <Meta>
+      <Format xmlns="syncml:metinf">int</Format>
+    </Meta>
+    <Target>
+      <LocURI>./Device/Vendor/MSFT/Policy/Config/WirelessDisplay/RequirePinForPairing</LocURI>
+    </Target>
+    <Data>1</Data>
+  </Item>
+</Replace>

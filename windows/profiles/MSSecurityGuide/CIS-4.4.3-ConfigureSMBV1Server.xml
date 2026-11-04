@@ -1,0 +1,13 @@
+<!-- Fleet policy: CIS 4.4.3 (L1) Ensure 'Configure SMB v1 server' is set to 'Disabled' -->
+<Replace>
+  <CmdID>1</CmdID>
+  <Item>
+    <Meta>
+      <Format xmlns="syncml:metinf">chr</Format>
+    </Meta>
+    <Target>
+      <LocURI>./Device/Vendor/MSFT/Policy/Config/MSSecurityGuide/ConfigureSMBV1Server</LocURI>
+    </Target>
+    <Data><![CDATA[<disabled/>]]></Data>
+  </Item>
+</Replace>

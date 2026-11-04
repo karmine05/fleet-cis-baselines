@@ -1,0 +1,13 @@
+<!-- Fleet policy: CIS 4.10.30.1 (L1) Ensure 'Configure Offer Remote Assistance' is set to 'Disabled' -->
+<Replace>
+  <CmdID>1</CmdID>
+  <Item>
+    <Meta>
+      <Format xmlns="syncml:metinf">chr</Format>
+    </Meta>
+    <Target>
+      <LocURI>./Device/Vendor/MSFT/Policy/Config/RemoteAssistance/UnsolicitedRemoteAssistance</LocURI>
+    </Target>
+    <Data><![CDATA[<disabled/>]]></Data>
+  </Item>
+</Replace>

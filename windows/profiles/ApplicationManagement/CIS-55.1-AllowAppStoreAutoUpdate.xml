@@ -1,0 +1,13 @@
+<!-- Fleet policy: CIS 55.1 (L1) Ensure 'Allow apps from the Microsoft app store to auto update' is set to 'Allowed' -->
+<Replace>
+  <CmdID>1</CmdID>
+  <Item>
+    <Meta>
+      <Format xmlns="syncml:metinf">int</Format>
+    </Meta>
+    <Target>
+      <LocURI>./Device/Vendor/MSFT/Policy/Config/ApplicationManagement/AllowAppStoreAutoUpdate</LocURI>
+    </Target>
+    <Data>1</Data>
+  </Item>
+</Replace>

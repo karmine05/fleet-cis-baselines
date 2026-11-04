@@ -1,0 +1,13 @@
+<!-- LAB-SAFE variant of CIS 89.13: Guests only: keeps local-account RDP working (NLA). Deployed and verified on this lab. -->
+<Replace>
+  <CmdID>1</CmdID>
+  <Item>
+    <Meta>
+      <Format xmlns="syncml:metinf">chr</Format>
+    </Meta>
+    <Target>
+      <LocURI>./Device/Vendor/MSFT/Policy/Config/UserRights/DenyAccessFromNetwork</LocURI>
+    </Target>
+    <Data>Guests</Data>
+  </Item>
+</Replace>

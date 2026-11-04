@@ -1,0 +1,13 @@
+<!-- Fleet policy: CIS 105.1 (L1) Ensure 'Backup Directory' is set to 'Backup the password to Azure AD only' -->
+<Replace>
+  <CmdID>1</CmdID>
+  <Item>
+    <Meta>
+      <Format xmlns="syncml:metinf">int</Format>
+    </Meta>
+    <Target>
+      <LocURI>./Device/Vendor/MSFT/LAPS/Policies/BackupDirectory</LocURI>
+    </Target>
+    <Data>1</Data>
+  </Item>
+</Replace>

@@ -1,0 +1,13 @@
+<!-- Fleet policy: CIS 89.34 (L1) Ensure 'Shut Down The System' is set to 'Administrators, Users' -->
+<Replace>
+  <CmdID>1</CmdID>
+  <Item>
+    <Meta>
+      <Format xmlns="syncml:metinf">chr</Format>
+    </Meta>
+    <Target>
+      <LocURI>./Device/Vendor/MSFT/Policy/Config/UserRights/ShutDownTheSystem</LocURI>
+    </Target>
+    <Data>AdministratorsUsers</Data>
+  </Item>
+</Replace>

@@ -1,0 +1,13 @@
+<!-- Fleet policy: CIS 22.29 (L1) Ensure 'PUA Protection' is set to 'PUA Protection on' -->
+<Replace>
+  <CmdID>1</CmdID>
+  <Item>
+    <Meta>
+      <Format xmlns="syncml:metinf">int</Format>
+    </Meta>
+    <Target>
+      <LocURI>./Device/Vendor/MSFT/Policy/Config/Defender/PUAProtection</LocURI>
+    </Target>
+    <Data>1</Data>
+  </Item>
+</Replace>

@@ -1,0 +1,13 @@
+<!-- Fleet policy: CIS 6.23 (L1) Ensure 'Privilege Use Audit Sensitive Privilege Use' is set to 'Success and Failure' -->
+<Replace>
+  <CmdID>1</CmdID>
+  <Item>
+    <Meta>
+      <Format xmlns="syncml:metinf">int</Format>
+    </Meta>
+    <Target>
+      <LocURI>./Device/Vendor/MSFT/Policy/Config/Audit/PrivilegeUse_AuditSensitivePrivilegeUse</LocURI>
+    </Target>
+    <Data>3</Data>
+  </Item>
+</Replace>

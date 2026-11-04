@@ -1,0 +1,13 @@
+<!-- Fleet policy: CIS 72.1 (L2) Ensure 'Allow Cloud Search' is set to 'Not allowed' -->
+<Replace>
+  <CmdID>1</CmdID>
+  <Item>
+    <Meta>
+      <Format xmlns="syncml:metinf">int</Format>
+    </Meta>
+    <Target>
+      <LocURI>./Device/Vendor/MSFT/Policy/Config/Search/AllowCloudSearch</LocURI>
+    </Target>
+    <Data>0</Data>
+  </Item>
+</Replace>

@@ -1,0 +1,13 @@
+<!-- Fleet policy: CIS 38.19 (L1) Ensure 'Enable Public Network Firewall: Disable Inbound Notifications' is set to 'True' -->
+<Replace>
+  <CmdID>1</CmdID>
+  <Item>
+    <Meta>
+      <Format xmlns="syncml:metinf">bool</Format>
+    </Meta>
+    <Target>
+      <LocURI>./Device/Vendor/MSFT/Firewall/MdmStore/PublicProfile/DisableInboundNotifications</LocURI>
+    </Target>
+    <Data>true</Data>
+  </Item>
+</Replace>

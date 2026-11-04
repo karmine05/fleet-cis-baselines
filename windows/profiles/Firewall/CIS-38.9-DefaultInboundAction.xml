@@ -1,0 +1,13 @@
+<!-- Fleet policy: CIS 38.9 (L1) Ensure 'Enable Private Network Firewall: Default Inbound Action for Private Profile' is set to 'Block' -->
+<Replace>
+  <CmdID>1</CmdID>
+  <Item>
+    <Meta>
+      <Format xmlns="syncml:metinf">int</Format>
+    </Meta>
+    <Target>
+      <LocURI>./Device/Vendor/MSFT/Firewall/MdmStore/PrivateProfile/DefaultInboundAction</LocURI>
+    </Target>
+    <Data>1</Data>
+  </Item>
+</Replace>

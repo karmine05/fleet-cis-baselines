@@ -1,0 +1,13 @@
+<!-- Fleet policy: CIS 4.10.13.1 (L1) Ensure 'Boot-Start Driver Initialization Policy' is set to 'Enabled: Good, unknown and bad but critical' -->
+<Replace>
+  <CmdID>1</CmdID>
+  <Item>
+    <Meta>
+      <Format xmlns="syncml:metinf">chr</Format>
+    </Meta>
+    <Target>
+      <LocURI>./Device/Vendor/MSFT/Policy/Config/System/BootStartDriverInitialization</LocURI>
+    </Target>
+    <Data><![CDATA[<enabled/><data id="SelectDriverLoadPolicy" value="3"/>]]></Data>
+  </Item>
+</Replace>

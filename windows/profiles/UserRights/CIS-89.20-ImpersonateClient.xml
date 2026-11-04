@@ -1,0 +1,13 @@
+<!-- Fleet policy: CIS 89.20 (L1) Ensure 'Impersonate Client' is set to 'Administrators, LOCAL SERVICE, NETWORK SERVICE, SERVICE' -->
+<Replace>
+  <CmdID>1</CmdID>
+  <Item>
+    <Meta>
+      <Format xmlns="syncml:metinf">chr</Format>
+    </Meta>
+    <Target>
+      <LocURI>./Device/Vendor/MSFT/Policy/Config/UserRights/ImpersonateClient</LocURI>
+    </Target>
+    <Data>AdministratorsLOCAL SERVICENETWORK SERVICESERVICE</Data>
+  </Item>
+</Replace>

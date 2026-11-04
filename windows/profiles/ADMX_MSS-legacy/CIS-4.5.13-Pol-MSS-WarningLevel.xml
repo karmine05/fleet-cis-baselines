@@ -1,0 +1,13 @@
+<!-- Fleet policy: CIS 4.5.13 (L1) Ensure 'MSS: (WarningLevel) Percentage threshold for the security event log at which the system will generate a warning' is set to 'Enabled: 90% or le -->
+<Replace>
+  <CmdID>1</CmdID>
+  <Item>
+    <Meta>
+      <Format xmlns="syncml:metinf">chr</Format>
+    </Meta>
+    <Target>
+      <LocURI>./Device/Vendor/MSFT/Policy/Config/ADMX_MSS-legacy/Pol_MSS_WarningLevel</LocURI>
+    </Target>
+    <Data><![CDATA[<enabled/><data id="WarningLevel" value="90"/>]]></Data>
+  </Item>
+</Replace>

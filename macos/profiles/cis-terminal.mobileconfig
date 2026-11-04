@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>PayloadContent</key>
+	<array>
+		<dict>
+			<key>PayloadDisplayName</key>
+			<string>com.apple.Terminal</string>
+			<key>PayloadIdentifier</key>
+			<string>com.fleet.cis.cis-terminal.0</string>
+			<key>PayloadType</key>
+			<string>com.apple.Terminal</string>
+			<key>PayloadUUID</key>
+			<string>74A0D7FE-A797-5FEA-9F9F-09DF6C463D99</string>
+			<key>PayloadVersion</key>
+			<integer>1</integer>
+			<key>SecureKeyboardEntry</key>
+			<true/>
+		</dict>
+	</array>
+	<key>PayloadDescription</key>
+	<string>Terminal secure keyboard entry (6.4.1)</string>
+	<key>PayloadDisplayName</key>
+	<string>CIS - Terminal secure keyboard entry (6.4.1)</string>
+	<key>PayloadIdentifier</key>
+	<string>com.fleet.cis.cis-terminal</string>
+	<key>PayloadScope</key>
+	<string>System</string>
+	<key>PayloadType</key>
+	<string>Configuration</string>
+	<key>PayloadUUID</key>
+	<string>35FB2AD1-212E-5947-9BA1-60BFC43011DF</string>
+	<key>PayloadVersion</key>
+	<integer>1</integer>
+</dict>
+</plist>

@@ -1,0 +1,13 @@
+<!-- Fleet policy: CIS 22.24 (L2) Ensure 'Enable Convert Warn To Block' is set to 'Warn verdicts are converted to block' -->
+<Replace>
+  <CmdID>1</CmdID>
+  <Item>
+    <Meta>
+      <Format xmlns="syncml:metinf">int</Format>
+    </Meta>
+    <Target>
+      <LocURI>./Device/Vendor/MSFT/Defender/Configuration/EnableConvertWarnToBlock</LocURI>
+    </Target>
+    <Data>1</Data>
+  </Item>
+</Replace>

@@ -1,0 +1,13 @@
+<!-- Fleet policy: CIS 34.5 (L1) Ensure 'Do not show feedback notifications' is set to 'Feedback notifications are disabled' -->
+<Replace>
+  <CmdID>1</CmdID>
+  <Item>
+    <Meta>
+      <Format xmlns="syncml:metinf">int</Format>
+    </Meta>
+    <Target>
+      <LocURI>./Device/Vendor/MSFT/Policy/Config/Experience/DoNotShowFeedbackNotifications</LocURI>
+    </Target>
+    <Data>1</Data>
+  </Item>
+</Replace>

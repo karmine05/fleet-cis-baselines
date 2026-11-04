@@ -1,0 +1,13 @@
+<!-- Fleet policy: CIS 49.23 (L1) Ensure 'Network security: Do not store LAN Manager hash value on next password change' is set to 'Enabled' -->
+<Replace>
+  <CmdID>1</CmdID>
+  <Item>
+    <Meta>
+      <Format xmlns="syncml:metinf">int</Format>
+    </Meta>
+    <Target>
+      <LocURI>./Device/Vendor/MSFT/Policy/Config/LocalPoliciesSecurityOptions/NetworkSecurity_DoNotStoreLANManagerHashValueOnNextPasswordChange</LocURI>
+    </Target>
+    <Data>1</Data>
+  </Item>
+</Replace>

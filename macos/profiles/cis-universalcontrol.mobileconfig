@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>PayloadContent</key>
+	<array>
+		<dict>
+			<key>Disable</key>
+			<true/>
+			<key>PayloadDisplayName</key>
+			<string>com.apple.universalcontrol</string>
+			<key>PayloadIdentifier</key>
+			<string>com.fleet.cis.cis-universalcontrol.0</string>
+			<key>PayloadType</key>
+			<string>com.apple.universalcontrol</string>
+			<key>PayloadUUID</key>
+			<string>5C784469-7DD0-5D8D-A33D-49A72CC9FAAE</string>
+			<key>PayloadVersion</key>
+			<integer>1</integer>
+		</dict>
+	</array>
+	<key>PayloadDescription</key>
+	<string>Disable Universal Control (2.8.1)</string>
+	<key>PayloadDisplayName</key>
+	<string>CIS - Disable Universal Control (2.8.1)</string>
+	<key>PayloadIdentifier</key>
+	<string>com.fleet.cis.cis-universalcontrol</string>
+	<key>PayloadScope</key>
+	<string>System</string>
+	<key>PayloadType</key>
+	<string>Configuration</string>
+	<key>PayloadUUID</key>
+	<string>9A5E692E-CE90-551D-B145-CDF09E7732DC</string>
+	<key>PayloadVersion</key>
+	<integer>1</integer>
+</dict>
+</plist>

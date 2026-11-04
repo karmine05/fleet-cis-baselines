@@ -1,0 +1,13 @@
+<!-- Fleet policy: CIS 89.18 (L1) Ensure 'Enable Delegation' is set to 'No One' -->
+<Replace>
+  <CmdID>1</CmdID>
+  <Item>
+    <Meta>
+      <Format xmlns="syncml:metinf">chr</Format>
+    </Meta>
+    <Target>
+      <LocURI>./Device/Vendor/MSFT/Policy/Config/UserRights/EnableDelegation</LocURI>
+    </Target>
+    <Data></Data>
+  </Item>
+</Replace>

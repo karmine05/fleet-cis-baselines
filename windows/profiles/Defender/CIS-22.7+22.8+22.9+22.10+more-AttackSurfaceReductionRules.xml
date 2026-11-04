@@ -1,0 +1,28 @@
+<!-- Fleet policy: CIS 22.7 (L1) Ensure 'ASR: Block abuse of exploited vulnerable signed drivers' is set to 'Block` -->
+<!-- Fleet policy: CIS 22.8 (L1) Ensure 'ASR: Block Adobe Reader from creating child processes' is set to 'Block' -->
+<!-- Fleet policy: CIS 22.9 (L1) Ensure 'ASR: Block all Office applications from creating child processes' is set to 'Audit' or higher -->
+<!-- Fleet policy: CIS 22.10 (L1) Ensure 'ASR: Block credential stealing from the Windows local security authority subsystem' is set to 'Block' -->
+<!-- Fleet policy: CIS 22.11 (L1) Ensure 'ASR: Block executable content from email client and webmail' is set to 'Block' -->
+<!-- Fleet policy: CIS 22.12 (L1) Ensure 'ASR: Block executable files from running unless they meet a prevalence, age, or trusted list criterion' is set to 'Audit' or higher -->
+<!-- Fleet policy: CIS 22.13 (L1) Ensure 'ASR: Block execution of potentially obfuscated scripts' is set to 'Audit' or higher -->
+<!-- Fleet policy: CIS 22.14 (L1) Ensure 'ASR: Block JavaScript or VBScript from launching downloaded executable content' is set to 'Block' -->
+<!-- Fleet policy: CIS 22.15 (L1) Ensure 'ASR: Block Office applications from creating executable content' is set to 'Block' -->
+<!-- Fleet policy: CIS 22.16 (L1) Ensure 'ASR: Block Office applications from injecting code into other processes' is set to 'Block' -->
+<!-- Fleet policy: CIS 22.17 (L1) Ensure 'ASR: Block Office communication application from creating child processes' is set to 'Audit' or higher -->
+<!-- Fleet policy: CIS 22.18 (L1) Ensure 'ASR: Block persistence through WMI event subscription' is set to 'Block' -->
+<!-- Fleet policy: CIS 22.19 (L1) Ensure 'ASR: Block process creations originating from PSExec and WMI commands' is set to 'Audit' or higher -->
+<!-- Fleet policy: CIS 22.20 (L1) Ensure 'ASR: Block untrusted and unsigned processes that run from USB' is set to 'Block' -->
+<!-- Fleet policy: CIS 22.21 (L1) Ensure 'ASR: Block Win32 API calls from Office macros' is set to 'Block' -->
+<!-- Fleet policy: CIS 22.22 (L1) Ensure 'ASR: Use advanced protection against ransomware' is set to 'Audit' or higher -->
+<Replace>
+  <CmdID>1</CmdID>
+  <Item>
+    <Meta>
+      <Format xmlns="syncml:metinf">chr</Format>
+    </Meta>
+    <Target>
+      <LocURI>./Device/Vendor/MSFT/Policy/Config/Defender/AttackSurfaceReductionRules</LocURI>
+    </Target>
+    <Data>01443614-CD74-433A-B99E-2ECDC07BFC25=1|26190899-1602-49E8-8B27-EB1D0A1CE869=1|3B576869-A4EC-4529-8536-B80A7769E899=1|56A863A9-875E-4185-98A7-B882C64B5CE5=1|5BEB7EFE-FD9A-4556-801D-275E5FFC04CC=1|75668C1F-73B5-4CF0-BB93-3ECF5CB7CC84=1|7674BA52-37EB-4A4F-A9A1-F0F9A1619A2C=1|92E97FA1-2EDF-4476-BDD6-9DD0B4DDDC7B=1|9E6C4E1F-7D60-472F-BA1A-A39EF669E4B2=1|B2B3F03D-6A65-4F7B-A9C7-1C7EF74A9BA4=1|BE9BA2D9-53EA-4CDC-84E5-9B1EEEE46550=1|C1DB55AB-C21A-4637-BB3F-A12568109D35=1|D1E49AAC-8F56-4280-B9BA-993A6D77406C=1|D3E037E1-3EB8-44C8-A917-57927947596D=1|D4F940AB-401B-4EFC-AADC-AD5F3C50688A=1|E6DB77E5-3DF2-4CF1-B95A-636979351E5B=1</Data>
+  </Item>
+</Replace>

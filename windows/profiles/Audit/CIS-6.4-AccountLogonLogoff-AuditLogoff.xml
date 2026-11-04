@@ -1,0 +1,13 @@
+<!-- Fleet policy: CIS 6.4 (L1) Ensure 'Account Logon Logoff Audit Logoff' is set to include 'Success' -->
+<Replace>
+  <CmdID>1</CmdID>
+  <Item>
+    <Meta>
+      <Format xmlns="syncml:metinf">int</Format>
+    </Meta>
+    <Target>
+      <LocURI>./Device/Vendor/MSFT/Policy/Config/Audit/AccountLogonLogoff_AuditLogoff</LocURI>
+    </Target>
+    <Data>1</Data>
+  </Item>
+</Replace>

@@ -1,0 +1,13 @@
+<!-- Fleet policy: CIS 49.4 (L1) Configure 'Accounts: Rename guest account' -->
+<Replace>
+  <CmdID>1</CmdID>
+  <Item>
+    <Meta>
+      <Format xmlns="syncml:metinf">chr</Format>
+    </Meta>
+    <Target>
+      <LocURI>./Device/Vendor/MSFT/Policy/Config/LocalPoliciesSecurityOptions/Accounts_RenameGuestAccount</LocURI>
+    </Target>
+    <Data>CHANGE-ME-guest</Data>
+  </Item>
+</Replace>

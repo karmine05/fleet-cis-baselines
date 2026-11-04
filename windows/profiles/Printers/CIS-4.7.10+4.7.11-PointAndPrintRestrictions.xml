@@ -1,0 +1,14 @@
+<!-- Fleet policy: CIS 4.7.10 (L1) Ensure 'Point and Print Restrictions: When installing drivers for a new connection' is set to 'Enabled: Show warning and elevation prompt' -->
+<!-- Fleet policy: CIS 4.7.11 (L1) Ensure 'Point and Print Restrictions: When updating drivers for an existing connection' is set to 'Enabled: Show warning and elevation prompt' -->
+<Replace>
+  <CmdID>1</CmdID>
+  <Item>
+    <Meta>
+      <Format xmlns="syncml:metinf">chr</Format>
+    </Meta>
+    <Target>
+      <LocURI>./Device/Vendor/MSFT/Policy/Config/Printers/PointAndPrintRestrictions</LocURI>
+    </Target>
+    <Data><![CDATA[<enabled/><data id="PointAndPrint_NoWarningNoElevationOnInstall_Enum" value="0"/><data id="PointAndPrint_NoWarningNoElevationOnUpdate_Enum" value="0"/>]]></Data>
+  </Item>
+</Replace>

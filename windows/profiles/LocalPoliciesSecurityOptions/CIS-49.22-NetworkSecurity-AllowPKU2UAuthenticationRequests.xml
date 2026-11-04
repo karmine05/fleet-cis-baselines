@@ -1,0 +1,13 @@
+<!-- Fleet policy: CIS 49.22 (L1) Ensure 'Network Security: Allow PKU2U authentication requests' is set to 'Block' -->
+<Replace>
+  <CmdID>1</CmdID>
+  <Item>
+    <Meta>
+      <Format xmlns="syncml:metinf">int</Format>
+    </Meta>
+    <Target>
+      <LocURI>./Device/Vendor/MSFT/Policy/Config/LocalPoliciesSecurityOptions/NetworkSecurity_AllowPKU2UAuthenticationRequests</LocURI>
+    </Target>
+    <Data>0</Data>
+  </Item>
+</Replace>

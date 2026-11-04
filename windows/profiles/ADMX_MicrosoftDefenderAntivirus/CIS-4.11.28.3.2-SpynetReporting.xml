@@ -1,0 +1,13 @@
+<!-- Fleet policy: CIS 4.11.28.3.2 (L2) Ensure 'Join Microsoft MAPS' is set to 'Disabled' -->
+<Replace>
+  <CmdID>1</CmdID>
+  <Item>
+    <Meta>
+      <Format xmlns="syncml:metinf">chr</Format>
+    </Meta>
+    <Target>
+      <LocURI>./Device/Vendor/MSFT/Policy/Config/ADMX_MicrosoftDefenderAntivirus/SpynetReporting</LocURI>
+    </Target>
+    <Data><![CDATA[<disabled/>]]></Data>
+  </Item>
+</Replace>

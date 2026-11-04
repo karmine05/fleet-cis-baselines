@@ -1,0 +1,13 @@
+<!-- Fleet policy: CIS 94.1 (L1) Ensure 'Allow widgets' is set to 'Not allowed' -->
+<Replace>
+  <CmdID>1</CmdID>
+  <Item>
+    <Meta>
+      <Format xmlns="syncml:metinf">int</Format>
+    </Meta>
+    <Target>
+      <LocURI>./Device/Vendor/MSFT/Policy/Config/NewsAndInterests/AllowNewsAndInterests</LocURI>
+    </Target>
+    <Data>0</Data>
+  </Item>
+</Replace>

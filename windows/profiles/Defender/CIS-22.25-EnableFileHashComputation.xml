@@ -1,0 +1,13 @@
+<!-- Fleet policy: CIS 22.25 (L2) Ensure 'Enable File Hash Computation' is set to 'Enable' -->
+<Replace>
+  <CmdID>1</CmdID>
+  <Item>
+    <Meta>
+      <Format xmlns="syncml:metinf">int</Format>
+    </Meta>
+    <Target>
+      <LocURI>./Device/Vendor/MSFT/Defender/Configuration/EnableFileHashComputation</LocURI>
+    </Target>
+    <Data>1</Data>
+  </Item>
+</Replace>

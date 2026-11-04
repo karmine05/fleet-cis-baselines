@@ -1,0 +1,13 @@
+<!-- Fleet policy: CIS 55.4 (L1) Ensure 'Block Non Admin User Install' is set to 'Block' -->
+<Replace>
+  <CmdID>1</CmdID>
+  <Item>
+    <Meta>
+      <Format xmlns="syncml:metinf">chr</Format>
+    </Meta>
+    <Target>
+      <LocURI>./Device/Vendor/MSFT/Policy/Config/ADMX_MSI/DisableMSI</LocURI>
+    </Target>
+    <Data><![CDATA[<enabled/><data id="DisableMSI" value="1"/>]]></Data>
+  </Item>
+</Replace>

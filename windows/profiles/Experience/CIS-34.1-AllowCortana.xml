@@ -1,0 +1,13 @@
+<!-- Fleet policy: CIS 34.1 (L1) Ensure 'Allow Cortana' is set to 'Block' -->
+<Replace>
+  <CmdID>1</CmdID>
+  <Item>
+    <Meta>
+      <Format xmlns="syncml:metinf">int</Format>
+    </Meta>
+    <Target>
+      <LocURI>./Device/Vendor/MSFT/Policy/Config/Experience/AllowCortana</LocURI>
+    </Target>
+    <Data>0</Data>
+  </Item>
+</Replace>

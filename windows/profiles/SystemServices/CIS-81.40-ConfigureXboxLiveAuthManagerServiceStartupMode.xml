@@ -1,0 +1,13 @@
+<!-- Fleet policy: CIS 81.40 (L1) Ensure 'Xbox Live Auth Manager (XblAuthManager)' is set to 'Disabled' -->
+<Replace>
+  <CmdID>1</CmdID>
+  <Item>
+    <Meta>
+      <Format xmlns="syncml:metinf">int</Format>
+    </Meta>
+    <Target>
+      <LocURI>./Device/Vendor/MSFT/Policy/Config/SystemServices/ConfigureXboxLiveAuthManagerServiceStartupMode</LocURI>
+    </Target>
+    <Data>4</Data>
+  </Item>
+</Replace>

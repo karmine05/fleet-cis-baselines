@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>PayloadContent</key>
+	<array>
+		<dict>
+			<key>PayloadDisplayName</key>
+			<string>com.apple.appstore</string>
+			<key>PayloadIdentifier</key>
+			<string>com.fleet.cis.cis-appstore.0</string>
+			<key>PayloadType</key>
+			<string>com.apple.appstore</string>
+			<key>PayloadUUID</key>
+			<string>FCB86CF8-D780-5AC5-810A-97E00FAAABAD</string>
+			<key>PayloadVersion</key>
+			<integer>1</integer>
+			<key>restrict-store-require-admin-to-install</key>
+			<true/>
+		</dict>
+	</array>
+	<key>PayloadDescription</key>
+	<string>App Store admin-only installs (2.1.2, L2)</string>
+	<key>PayloadDisplayName</key>
+	<string>CIS - App Store admin-only installs (2.1.2, L2)</string>
+	<key>PayloadIdentifier</key>
+	<string>com.fleet.cis.cis-appstore</string>
+	<key>PayloadScope</key>
+	<string>System</string>
+	<key>PayloadType</key>
+	<string>Configuration</string>
+	<key>PayloadUUID</key>
+	<string>892EF937-BCE0-5B1C-86A1-1D2A686252FD</string>
+	<key>PayloadVersion</key>
+	<integer>1</integer>
+</dict>
+</plist>

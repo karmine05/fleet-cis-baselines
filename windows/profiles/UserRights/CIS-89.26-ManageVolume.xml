@@ -1,0 +1,13 @@
+<!-- Fleet policy: CIS 89.26 (L1) Ensure 'Manage Volume' is set to 'Administrators' -->
+<Replace>
+  <CmdID>1</CmdID>
+  <Item>
+    <Meta>
+      <Format xmlns="syncml:metinf">chr</Format>
+    </Meta>
+    <Target>
+      <LocURI>./Device/Vendor/MSFT/Policy/Config/UserRights/ManageVolume</LocURI>
+    </Target>
+    <Data>Administrators</Data>
+  </Item>
+</Replace>

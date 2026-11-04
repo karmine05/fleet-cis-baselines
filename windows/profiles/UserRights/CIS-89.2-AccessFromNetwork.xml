@@ -1,0 +1,13 @@
+<!-- Fleet policy: CIS 89.2 (L1) Ensure 'Access From Network' is set to 'Administrators, Remote Desktop Users' -->
+<Replace>
+  <CmdID>1</CmdID>
+  <Item>
+    <Meta>
+      <Format xmlns="syncml:metinf">chr</Format>
+    </Meta>
+    <Target>
+      <LocURI>./Device/Vendor/MSFT/Policy/Config/UserRights/AccessFromNetwork</LocURI>
+    </Target>
+    <Data>AdministratorsRemote Desktop Users</Data>
+  </Item>
+</Replace>

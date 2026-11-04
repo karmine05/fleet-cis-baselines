@@ -1,0 +1,13 @@
+<!-- Fleet policy: CIS 4.11.31.1 (L1) Ensure 'Prevent users from sharing files within their profile. (User)' is set to 'Enabled' -->
+<Replace>
+  <CmdID>1</CmdID>
+  <Item>
+    <Meta>
+      <Format xmlns="syncml:metinf">chr</Format>
+    </Meta>
+    <Target>
+      <LocURI>./User/Vendor/MSFT/Policy/Config/ADMX_Sharing/NoInplaceSharing</LocURI>
+    </Target>
+    <Data><![CDATA[<enabled/>]]></Data>
+  </Item>
+</Replace>

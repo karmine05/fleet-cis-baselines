@@ -1,0 +1,13 @@
+<!-- Fleet policy: CIS 49.11 (L1) Ensure 'Interactive logon: Smart card removal behavior' is set to 'Lock Workstation' or higher -->
+<Replace>
+  <CmdID>1</CmdID>
+  <Item>
+    <Meta>
+      <Format xmlns="syncml:metinf">int</Format>
+    </Meta>
+    <Target>
+      <LocURI>./Device/Vendor/MSFT/Policy/Config/LocalPoliciesSecurityOptions/InteractiveLogon_SmartCardRemovalBehavior</LocURI>
+    </Target>
+    <Data>1</Data>
+  </Item>
+</Replace>

@@ -1,0 +1,13 @@
+<!-- Fleet policy: CIS 49.6 (L1) Ensure 'Interactive logon: Do not display last signed-in' is set to 'Enabled' -->
+<Replace>
+  <CmdID>1</CmdID>
+  <Item>
+    <Meta>
+      <Format xmlns="syncml:metinf">int</Format>
+    </Meta>
+    <Target>
+      <LocURI>./Device/Vendor/MSFT/Policy/Config/LocalPoliciesSecurityOptions/InteractiveLogon_DoNotDisplayLastSignedIn</LocURI>
+    </Target>
+    <Data>1</Data>
+  </Item>
+</Replace>

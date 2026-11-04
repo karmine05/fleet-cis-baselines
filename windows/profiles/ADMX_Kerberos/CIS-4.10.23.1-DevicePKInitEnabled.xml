@@ -1,0 +1,13 @@
+<!-- Fleet policy: CIS 4.10.23.1 (L2) Ensure 'Support device authentication using certificate' is set to 'Enabled: Automatic' -->
+<Replace>
+  <CmdID>1</CmdID>
+  <Item>
+    <Meta>
+      <Format xmlns="syncml:metinf">chr</Format>
+    </Meta>
+    <Target>
+      <LocURI>./Device/Vendor/MSFT/Policy/Config/ADMX_Kerberos/DevicePKInitEnabled</LocURI>
+    </Target>
+    <Data><![CDATA[<enabled/><data id="DevicePKInitBehavior" value="0"/>]]></Data>
+  </Item>
+</Replace>

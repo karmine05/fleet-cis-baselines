@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>PayloadContent</key>
+	<array>
+		<dict>
+			<key>PayloadDisplayName</key>
+			<string>com.apple.screensaver</string>
+			<key>PayloadIdentifier</key>
+			<string>com.fleet.cis.cis-screensaver.0</string>
+			<key>PayloadType</key>
+			<string>com.apple.screensaver</string>
+			<key>PayloadUUID</key>
+			<string>99C8F134-D59F-5B7E-A10C-1409B5F2AC7B</string>
+			<key>PayloadVersion</key>
+			<integer>1</integer>
+			<key>askForPassword</key>
+			<true/>
+			<key>askForPasswordDelay</key>
+			<integer>0</integer>
+			<key>idleTime</key>
+			<integer>900</integer>
+		</dict>
+	</array>
+	<key>PayloadDescription</key>
+	<string>Screen saver idle time and password (2.11.1, 2.11.2)</string>
+	<key>PayloadDisplayName</key>
+	<string>CIS - Screen saver idle time and password (2.11.1, 2.11.2)</string>
+	<key>PayloadIdentifier</key>
+	<string>com.fleet.cis.cis-screensaver</string>
+	<key>PayloadScope</key>
+	<string>System</string>
+	<key>PayloadType</key>
+	<string>Configuration</string>
+	<key>PayloadUUID</key>
+	<string>1733BA58-CC03-5AE8-AE17-7A1A8278EE51</string>
+	<key>PayloadVersion</key>
+	<integer>1</integer>
+</dict>
+</plist>

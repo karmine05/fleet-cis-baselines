@@ -1,0 +1,13 @@
+<!-- Fleet policy: CIS 46.1 (L1) Ensure 'Enable insecure guest logons' is set to 'Disabled' -->
+<Replace>
+  <CmdID>1</CmdID>
+  <Item>
+    <Meta>
+      <Format xmlns="syncml:metinf">int</Format>
+    </Meta>
+    <Target>
+      <LocURI>./Device/Vendor/MSFT/Policy/Config/LanmanWorkstation/EnableInsecureGuestLogons</LocURI>
+    </Target>
+    <Data>0</Data>
+  </Item>
+</Replace>

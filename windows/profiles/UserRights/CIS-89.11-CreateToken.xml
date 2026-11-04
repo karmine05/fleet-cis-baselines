@@ -1,0 +1,13 @@
+<!-- Fleet policy: CIS 89.11 (L1) Ensure 'Create Token' is set to 'No One' -->
+<Replace>
+  <CmdID>1</CmdID>
+  <Item>
+    <Meta>
+      <Format xmlns="syncml:metinf">chr</Format>
+    </Meta>
+    <Target>
+      <LocURI>./Device/Vendor/MSFT/Policy/Config/UserRights/CreateToken</LocURI>
+    </Target>
+    <Data></Data>
+  </Item>
+</Replace>

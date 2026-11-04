@@ -1,0 +1,13 @@
+<!-- Fleet policy: CIS 6.13 (L1) Ensure 'Audit Security System Extension' is set to include 'Success' -->
+<Replace>
+  <CmdID>1</CmdID>
+  <Item>
+    <Meta>
+      <Format xmlns="syncml:metinf">int</Format>
+    </Meta>
+    <Target>
+      <LocURI>./Device/Vendor/MSFT/Policy/Config/Audit/System_AuditSecuritySystemExtension</LocURI>
+    </Target>
+    <Data>1</Data>
+  </Item>
+</Replace>

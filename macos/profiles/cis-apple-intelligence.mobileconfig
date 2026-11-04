@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>PayloadContent</key>
+	<array>
+		<dict>
+			<key>ExternalIntelligenceExtensionsEnabled</key>
+			<false/>
+			<key>PayloadDisplayName</key>
+			<string>com.apple.IntelligencePlatform</string>
+			<key>PayloadIdentifier</key>
+			<string>com.fleet.cis.cis-apple-intelligence.0</string>
+			<key>PayloadType</key>
+			<string>com.apple.IntelligencePlatform</string>
+			<key>PayloadUUID</key>
+			<string>5FC226D9-E32A-589F-9B0E-2FBC558CD8B0</string>
+			<key>PayloadVersion</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>PayloadDisplayName</key>
+			<string>com.apple.mail</string>
+			<key>PayloadIdentifier</key>
+			<string>com.fleet.cis.cis-apple-intelligence.1</string>
+			<key>PayloadType</key>
+			<string>com.apple.mail</string>
+			<key>PayloadUUID</key>
+			<string>C1411351-AE71-5FC2-B1AA-64D56EBA2C00</string>
+			<key>PayloadVersion</key>
+			<integer>1</integer>
+			<key>ProtectActivity</key>
+			<true/>
+			<key>SummarizationEnabled</key>
+			<false/>
+		</dict>
+		<dict>
+			<key>PayloadDisplayName</key>
+			<string>com.apple.notes</string>
+			<key>PayloadIdentifier</key>
+			<string>com.fleet.cis.cis-apple-intelligence.2</string>
+			<key>PayloadType</key>
+			<string>com.apple.notes</string>
+			<key>PayloadUUID</key>
+			<string>6FACB525-405B-5D36-9BCA-3AC03C9A8298</string>
+			<key>PayloadVersion</key>
+			<integer>1</integer>
+			<key>SummarizationEnabled</key>
+			<false/>
+		</dict>
+		<dict>
+			<key>PayloadDisplayName</key>
+			<string>com.apple.writingtools</string>
+			<key>PayloadIdentifier</key>
+			<string>com.fleet.cis.cis-apple-intelligence.3</string>
+			<key>PayloadType</key>
+			<string>com.apple.writingtools</string>
+			<key>PayloadUUID</key>
+			<string>C821788E-EC4E-56E6-8E61-217857EC467A</string>
+			<key>PayloadVersion</key>
+			<integer>1</integer>
+			<key>WritingToolsEnabled</key>
+			<false/>
+		</dict>
+	</array>
+	<key>PayloadDescription</key>
+	<string>Apple Intelligence features off (2.5.1.x)</string>
+	<key>PayloadDisplayName</key>
+	<string>CIS - Apple Intelligence features off (2.5.1.x)</string>
+	<key>PayloadIdentifier</key>
+	<string>com.fleet.cis.cis-apple-intelligence</string>
+	<key>PayloadScope</key>
+	<string>System</string>
+	<key>PayloadType</key>
+	<string>Configuration</string>
+	<key>PayloadUUID</key>
+	<string>93958C85-8FF8-5DFD-993F-329ABB15F1FC</string>
+	<key>PayloadVersion</key>
+	<integer>1</integer>
+</dict>
+</plist>

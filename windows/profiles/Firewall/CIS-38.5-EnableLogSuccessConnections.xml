@@ -1,0 +1,13 @@
+<!-- Fleet policy: CIS 38.5 (L1) Ensure 'Enable Domain Network Firewall: Enable Log Success Connections' is set to 'Enable Logging Of Successful Connections' -->
+<Replace>
+  <CmdID>1</CmdID>
+  <Item>
+    <Meta>
+      <Format xmlns="syncml:metinf">bool</Format>
+    </Meta>
+    <Target>
+      <LocURI>./Device/Vendor/MSFT/Firewall/MdmStore/DomainProfile/EnableLogSuccessConnections</LocURI>
+    </Target>
+    <Data>true</Data>
+  </Item>
+</Replace>

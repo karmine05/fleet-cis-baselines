@@ -1,0 +1,13 @@
+<!-- Fleet policy: CIS 6.20 (L1) Ensure 'Object Access Audit Removable Storage' is set to 'Success and Failure' -->
+<Replace>
+  <CmdID>1</CmdID>
+  <Item>
+    <Meta>
+      <Format xmlns="syncml:metinf">int</Format>
+    </Meta>
+    <Target>
+      <LocURI>./Device/Vendor/MSFT/Policy/Config/Audit/ObjectAccess_AuditRemovableStorage</LocURI>
+    </Target>
+    <Data>3</Data>
+  </Item>
+</Replace>

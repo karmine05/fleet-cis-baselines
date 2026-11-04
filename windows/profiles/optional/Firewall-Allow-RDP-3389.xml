@@ -1,0 +1,85 @@
+<!-- Optional: MDM firewall rule that allows inbound RDP (TCP 3389) on all profiles. Use it with the CIS firewall profiles if you manage hosts over RDP. -->
+<Add>
+  <CmdID>1</CmdID>
+  <Item>
+    <Meta>
+      <Format xmlns="syncml:metinf">chr</Format>
+    </Meta>
+    <Target>
+      <LocURI>./Device/Vendor/MSFT/Firewall/MdmStore/FirewallRules/AllowRDP/Name</LocURI>
+    </Target>
+    <Data>Allow RDP TCP 3389</Data>
+  </Item>
+</Add>
+<Add>
+  <CmdID>2</CmdID>
+  <Item>
+    <Meta>
+      <Format xmlns="syncml:metinf">chr</Format>
+    </Meta>
+    <Target>
+      <LocURI>./Device/Vendor/MSFT/Firewall/MdmStore/FirewallRules/AllowRDP/Direction</LocURI>
+    </Target>
+    <Data>IN</Data>
+  </Item>
+</Add>
+<Add>
+  <CmdID>3</CmdID>
+  <Item>
+    <Meta>
+      <Format xmlns="syncml:metinf">int</Format>
+    </Meta>
+    <Target>
+      <LocURI>./Device/Vendor/MSFT/Firewall/MdmStore/FirewallRules/AllowRDP/Protocol</LocURI>
+    </Target>
+    <Data>6</Data>
+  </Item>
+</Add>
+<Add>
+  <CmdID>4</CmdID>
+  <Item>
+    <Meta>
+      <Format xmlns="syncml:metinf">chr</Format>
+    </Meta>
+    <Target>
+      <LocURI>./Device/Vendor/MSFT/Firewall/MdmStore/FirewallRules/AllowRDP/LocalPortRanges</LocURI>
+    </Target>
+    <Data>3389</Data>
+  </Item>
+</Add>
+<Add>
+  <CmdID>5</CmdID>
+  <Item>
+    <Meta>
+      <Format xmlns="syncml:metinf">int</Format>
+    </Meta>
+    <Target>
+      <LocURI>./Device/Vendor/MSFT/Firewall/MdmStore/FirewallRules/AllowRDP/Action/Type</LocURI>
+    </Target>
+    <Data>1</Data>
+  </Item>
+</Add>
+<Add>
+  <CmdID>6</CmdID>
+  <Item>
+    <Meta>
+      <Format xmlns="syncml:metinf">int</Format>
+    </Meta>
+    <Target>
+      <LocURI>./Device/Vendor/MSFT/Firewall/MdmStore/FirewallRules/AllowRDP/Profiles</LocURI>
+    </Target>
+    <Data>7</Data>
+  </Item>
+</Add>
+<Add>
+  <CmdID>7</CmdID>
+  <Item>
+    <Meta>
+      <Format xmlns="syncml:metinf">bool</Format>
+    </Meta>
+    <Target>
+      <LocURI>./Device/Vendor/MSFT/Firewall/MdmStore/FirewallRules/AllowRDP/Enabled</LocURI>
+    </Target>
+    <Data>true</Data>
+  </Item>
+</Add>

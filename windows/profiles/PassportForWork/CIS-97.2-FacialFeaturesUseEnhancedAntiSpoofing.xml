@@ -1,0 +1,13 @@
+<!-- Fleet policy: CIS 97.2 (L1) Ensure 'Facial Features Use Enhanced Anti Spoofing' is set to 'true' -->
+<Replace>
+  <CmdID>1</CmdID>
+  <Item>
+    <Meta>
+      <Format xmlns="syncml:metinf">bool</Format>
+    </Meta>
+    <Target>
+      <LocURI>./Device/Vendor/MSFT/PassportForWork/Biometrics/FacialFeaturesUseEnhancedAntiSpoofing</LocURI>
+    </Target>
+    <Data>true</Data>
+  </Item>
+</Replace>

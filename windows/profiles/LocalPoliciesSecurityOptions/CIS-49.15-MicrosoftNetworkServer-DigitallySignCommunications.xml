@@ -1,0 +1,13 @@
+<!-- Fleet policy: CIS 49.15 (L1) Ensure 'Microsoft network server: Digitally sign communications (always)' is set to 'Enabled' -->
+<Replace>
+  <CmdID>1</CmdID>
+  <Item>
+    <Meta>
+      <Format xmlns="syncml:metinf">int</Format>
+    </Meta>
+    <Target>
+      <LocURI>./Device/Vendor/MSFT/Policy/Config/LocalPoliciesSecurityOptions/MicrosoftNetworkServer_DigitallySignCommunicationsAlways</LocURI>
+    </Target>
+    <Data>1</Data>
+  </Item>
+</Replace>

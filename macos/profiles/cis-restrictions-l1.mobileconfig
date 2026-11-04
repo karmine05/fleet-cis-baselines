@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>PayloadContent</key>
+	<array>
+		<dict>
+			<key>PayloadDisplayName</key>
+			<string>com.apple.applicationaccess</string>
+			<key>PayloadIdentifier</key>
+			<string>com.fleet.cis.cis-restrictions-l1.0</string>
+			<key>PayloadType</key>
+			<string>com.apple.applicationaccess</string>
+			<key>PayloadUUID</key>
+			<string>28C00295-7307-53DF-920A-44CA44C29E51</string>
+			<key>PayloadVersion</key>
+			<integer>1</integer>
+			<key>Siri Data Sharing Opt-In Status</key>
+			<integer>2</integer>
+			<key>allowAirDrop</key>
+			<false/>
+			<key>allowAirPlayIncomingRequests</key>
+			<false/>
+			<key>allowApplePersonalizedAdvertising</key>
+			<false/>
+			<key>allowAssistant</key>
+			<false/>
+			<key>allowDiagnosticSubmission</key>
+			<false/>
+			<key>enforcedSoftwareUpdateDelay</key>
+			<integer>30</integer>
+			<key>forceAutomaticDateAndTime</key>
+			<true/>
+			<key>forceOnDeviceOnlyDictation</key>
+			<true/>
+		</dict>
+	</array>
+	<key>PayloadDescription</key>
+	<string>Restrictions, CIS Level 1 automated items</string>
+	<key>PayloadDisplayName</key>
+	<string>CIS - Restrictions, CIS Level 1 automated items</string>
+	<key>PayloadIdentifier</key>
+	<string>com.fleet.cis.cis-restrictions-l1</string>
+	<key>PayloadScope</key>
+	<string>System</string>
+	<key>PayloadType</key>
+	<string>Configuration</string>
+	<key>PayloadUUID</key>
+	<string>EE73D23C-0609-5F14-8B72-9DF0B608A2A8</string>
+	<key>PayloadVersion</key>
+	<integer>1</integer>
+</dict>
+</plist>

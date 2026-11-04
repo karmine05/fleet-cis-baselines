@@ -1,0 +1,13 @@
+<!-- Fleet policy: CIS 93.1 (L1) Ensure 'Allow Auto Connect To Wi Fi Sense Hotspots' is set to 'Block' -->
+<Replace>
+  <CmdID>1</CmdID>
+  <Item>
+    <Meta>
+      <Format xmlns="syncml:metinf">int</Format>
+    </Meta>
+    <Target>
+      <LocURI>./Device/Vendor/MSFT/Policy/Config/Wifi/AllowAutoConnectToWiFiSenseHotspots</LocURI>
+    </Target>
+    <Data>0</Data>
+  </Item>
+</Replace>

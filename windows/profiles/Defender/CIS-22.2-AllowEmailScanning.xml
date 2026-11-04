@@ -1,0 +1,13 @@
+<!-- Fleet policy: CIS 22.2 (L1) Ensure 'Allow Email Scanning' is set to 'Allowed' -->
+<Replace>
+  <CmdID>1</CmdID>
+  <Item>
+    <Meta>
+      <Format xmlns="syncml:metinf">int</Format>
+    </Meta>
+    <Target>
+      <LocURI>./Device/Vendor/MSFT/Policy/Config/Defender/AllowEmailScanning</LocURI>
+    </Target>
+    <Data>1</Data>
+  </Item>
+</Replace>

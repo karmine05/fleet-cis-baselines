@@ -1,0 +1,15 @@
+<!-- Fleet policy: CIS 4.10.20.1.1 (L2) Ensure 'Turn off access to the Store' is set to 'Enabled' -->
+<!-- Fleet policy: CIS 4.11.35.1 (L2) Ensure 'Turn off Push To Install service' is set to 'Enabled' -->
+<!-- Fleet policy: CIS 55.5 (L2) Ensure 'Disable Store Originated Apps' is set to 'Enabled' -->
+<Replace>
+  <CmdID>1</CmdID>
+  <Item>
+    <Meta>
+      <Format xmlns="syncml:metinf">int</Format>
+    </Meta>
+    <Target>
+      <LocURI>./Device/Vendor/MSFT/Policy/Config/ApplicationManagement/DisableStoreOriginatedApps</LocURI>
+    </Target>
+    <Data>1</Data>
+  </Item>
+</Replace>

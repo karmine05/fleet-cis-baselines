@@ -1,0 +1,13 @@
+<!-- Fleet policy: CIS 6.22 (L1) Ensure 'Policy Change Audit Other Policy Change Events' is set to include 'Failure' -->
+<Replace>
+  <CmdID>1</CmdID>
+  <Item>
+    <Meta>
+      <Format xmlns="syncml:metinf">int</Format>
+    </Meta>
+    <Target>
+      <LocURI>./Device/Vendor/MSFT/Policy/Config/Audit/PolicyChange_AuditOtherPolicyChangeEvents</LocURI>
+    </Target>
+    <Data>2</Data>
+  </Item>
+</Replace>

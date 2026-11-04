@@ -1,0 +1,13 @@
+<!-- Fleet policy: CIS 22.1 (L1) Ensure 'Allow Behavior Monitoring' is set to 'Allowed' -->
+<Replace>
+  <CmdID>1</CmdID>
+  <Item>
+    <Meta>
+      <Format xmlns="syncml:metinf">int</Format>
+    </Meta>
+    <Target>
+      <LocURI>./Device/Vendor/MSFT/Policy/Config/Defender/AllowBehaviorMonitoring</LocURI>
+    </Target>
+    <Data>1</Data>
+  </Item>
+</Replace>

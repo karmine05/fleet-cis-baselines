@@ -1,0 +1,13 @@
+<!-- Fleet policy: CIS 6.10 (L1) Ensure 'Audit File Share Access' is set to 'Success and Failure' -->
+<Replace>
+  <CmdID>1</CmdID>
+  <Item>
+    <Meta>
+      <Format xmlns="syncml:metinf">int</Format>
+    </Meta>
+    <Target>
+      <LocURI>./Device/Vendor/MSFT/Policy/Config/Audit/ObjectAccess_AuditFileShare</LocURI>
+    </Target>
+    <Data>3</Data>
+  </Item>
+</Replace>
